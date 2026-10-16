@@ -1,11 +1,11 @@
 import { useState } from "react";
-import StatCard from "./StatCard";
+// import StatCard from "./StatCard";
 
 function Hire(rate){
 
     const [hours, setHours] = useState(0);
 
-    const total = hours * rate.rate;
+    // const total = hours * rate.rate;
 
     function handleHour() {
         setHours(hours + 1);
@@ -16,24 +16,32 @@ function Hire(rate){
     }
 
     return (
-        <div className="flex gap-4">
-        <button
-                className="cursor-pointer rounded-lg bg-[#222222] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
-                onClick={handleHour}
-        >
-                Add hour:
-        </button>
+        <div className="mx-20 mt-8 flex items-center justify-between rounded-xl bg-[#222222] px-6 text-[#FAF3E1]s">
+            <div>
+                <h3 className="text-2xl font-bold"> Hire me for {hours} hours. </h3>
+                <p className="mt-1 text-xl"> Total: 
+                    <span className="font-bold text-[#FA8112]">
+                        PHP {hours * rate.rate}
+                    </span>
+                </p>
+            </div>
 
-        <button
-                className="cursor-pointer rounded-lg bg-[#222222] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
-                onClick={handleReset}
-        >
-                Clear
-        </button>
+            <div>
+                <button
+                        className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
+                        onClick={handleHour}
+                >
+                        Add hour:
+                </button>
 
+                <button
+                        className="cursor-pointer rounded-lg border 2 border-[#FAF3E1] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
+                        onClick={handleReset}
+                >
+                        Clear
+                </button>
 
-        <StatCard value={total} label="Total" />
-    
+            </div>
         </div>
     )
 }
