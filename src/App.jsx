@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-// import Bio from "./components/Bio";
-// import StatCard from "./components/StatCard";
-// import RepoCard from "./components/RepoCard";
 import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import Repositories from "./components/Repositories";

@@ -16,7 +16,7 @@ function Hire(rate){
     }
 
     return (
-        <div className="mx-20 mt-8 flex items-center justify-between rounded-xl bg-[#222222] px-6 text-[#FAF3E1]s">
+        <div className="mx-20 mt-8 flex items-center justify-between rounded-xl bg-[#222222] px-6 text-[#FAF3E1]">
             <div>
                 <h3 className="text-2xl font-bold"> Hire me for {hours} hours. </h3>
                 <p className="mt-1 text-xl"> Total: 
