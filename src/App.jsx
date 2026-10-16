@@ -40,9 +40,11 @@ function App() {
     <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
       <Navbar / > 
 
-      <Profile followers={followers} rate={rate} handleFollow={handleFollow} handleAddRate={handleAddRate} handleReset={handleReset} />
+      <Profile followers={followers} rate={rate} handleFollow={handleFollow} 
+      handleAddRate={handleAddRate} handleReset={handleReset} />
 
-      <Repositories handleStarPortfolio={handleStarPortfolio} handleStarTodo={handleStarTodo} handleStarDotfiles={handleStarDotfiles} />
+      <Repositories handleStarPortfolio={handleStarPortfolio} handleStarTodo={handleStarTodo} 
+      handleStarDotfiles={handleStarDotfiles} />
 
       <Footer />
     </div>

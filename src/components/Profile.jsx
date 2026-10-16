@@ -1,7 +1,6 @@
 import Bio from "./Bio";
 import Hire from "./Hire";
 import StatCard from "./StatCard";
-// import Controls from "./Controls";
 
 function Profile({ followers, rate, handleFollow, handleAddRate, handleReset }) {
     return (
@@ -16,8 +15,7 @@ function Profile({ followers, rate, handleFollow, handleAddRate, handleReset }) 
         </div>
 
         <div className="flex gap-4">
-            
-        {/* <Controls handleAddRate={handleAddRate} handleFollow={handleFollow} handleReset={handleReset} /> */}
+
           <button
             className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
             onClick={handleFollow}
