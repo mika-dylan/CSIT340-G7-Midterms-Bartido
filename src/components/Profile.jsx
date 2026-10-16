@@ -1,8 +1,10 @@
 import Bio from "./Bio";
+import Hire from "./Hire";
 import StatCard from "./StatCard";
 
 function Profile({ followers, rate, handleFollow, handleAddRate, handleReset }) {
     return (
+    <>
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <Bio name="Mika Dylan T. Bartido" username="mika-dylan" />
@@ -33,8 +35,10 @@ function Profile({ followers, rate, handleFollow, handleAddRate, handleReset }) 
           </button>
         </div>
       </div>
-
-
+    
+    <Hire rate={rate} />
+    
+    </>
 
     );
 }
